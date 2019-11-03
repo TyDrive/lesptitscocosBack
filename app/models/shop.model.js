@@ -19,7 +19,9 @@ const ShopSchema = mongoose.Schema({
     category: {
         name: String,
         slug: String
-    }
+    },
+    products: Array,
+    favorite: Boolean
 }, {
     timestamps: true
 });
